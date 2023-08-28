@@ -1,11 +1,11 @@
-import 'package:flutter/widgets.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'general_test_screen.dart';
 
+/// Экран выбора интересов
 abstract class InterestsTestScreen {
-  static Finder photoListItem = GeneralTestScreen.listItem('Photo');
-  static Finder artListItem = GeneralTestScreen.listItem('Art');
+  /// Finder для поиска всех чекбоксов на экране
+  static Finder chBox = find.byType(Checkbox);
 
-  static Finder list = find.byType(ListView);
-
+  /// Finder для поиска всех текстов на экране
+  static Finder textsList = find.byType(Text);
 }

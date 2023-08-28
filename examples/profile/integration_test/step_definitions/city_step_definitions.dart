@@ -28,8 +28,7 @@ abstract class CityStepDefinitions {
                 tester
                     .widget<TextField>(CityTestScreen.cityField)
                     .controller!
-                    .text
-                    .length,
+                    .text,
                 equals(context.world.scenarioContext['city'] as String));
           },
         ),
